@@ -53,6 +53,17 @@ li {
   line-height: 1;
 }
 
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .units {
   position: relative;
   font-size: 16px;
