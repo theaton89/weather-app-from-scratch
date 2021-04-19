@@ -1,8 +1,35 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
+  let hours = [
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+  ];
+  let hour = hours[date.getHours()];
+  if (hour < 10) {
+    hour = `0${hour}`;
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -20,7 +47,7 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day} ${hour}:${minutes}`;
 }
 
 function displayTemperature(response) {
