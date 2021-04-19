@@ -1,13 +1,18 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Libre Franklin", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  background-attachment: fixed;
 }
 
 h1 {
-  color: gray;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }
 
 ul {
@@ -32,6 +37,7 @@ li {
   padding: 20px;
   border: 1px solid #dadce1;
   border-radius: 10px;
+  background: white;
 }
 
 .overview {
@@ -40,10 +46,10 @@ li {
 
 .weather-temperature img {
   margin-right: 5px;
-  height: 64px;
-  width: 64px;
+  height: 80px;
+  width: 80px;
   position: relative;
-  top: -24px;
+  top: -18px;
 }
 
 .weather-temperature strong {
@@ -68,4 +74,9 @@ li {
   position: relative;
   font-size: 16px;
   top: -32px;
+}
+
+small {
+  font-size: 12px;
+  margin: 4px;
 }
