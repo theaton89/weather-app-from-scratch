@@ -44,8 +44,19 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "5ec00814f3c8665ba79cad93cf79765f";
-let units = "imperial";
-let city = "New York";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-axios.get(apiUrl).then(displayTemperature);
+function search(city) {
+  let apiKey = "5ec00814f3c8665ba79cad93cf79765f";
+  let units = "imperial";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+search("San Diego");
+let form = document.querySelector("#search-form");
+form.addEventListener("click", handleSubmit);
