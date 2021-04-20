@@ -9,11 +9,14 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <title>Weather App</title>
   </head>
@@ -21,19 +24,28 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app shadow p-3 mb-5 bg-white rounded">
-          <form id = "search-form" class="mb-3">
-            <div class = "row">
-              <div class = "col-9">
-            <input type ="search" placeholder="Type a city..." class="form-control" id="city-input"/>
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city..."
+                  class="form-control"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
             </div>
-            <div class = "col-3">
-            <input type="submit" value="Search" class= "btn btn-primary w-100"/>
-            </div>
-          </div>
           </form>
 
           <div class="overview">
-            <h1 id="city"></h1></h1>
+            <h1 id="city"></h1>
             <ul>
               <li>Last updated: <span id="date"></span></li>
               <li id="condition">Clear</li>
@@ -42,34 +54,52 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature">
-                <img
-                  src=""
-                  alt=""
-                  class="float-left"
-                  id= "icon"
-                />
+                <img src="" alt="" class="float-left" id="icon" />
                 <strong id="temperature">64</strong
-                ><span class="units"><a href="#" id="fahrenheit-link" class="active">°F</a> |<a href="#" id="celsius-link">°C</a></span>
+                ><span class="units"
+                  ><a href="#" id="fahrenheit-link" class="active">°F</a> |<a
+                    href="#"
+                    id="celsius-link"
+                    >°C</a
+                  ></span
+                >
               </div>
             </div>
 
             <div class="col-6">
               <ul>
-          
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span>mph</li>
               </ul>
             </div>
           </div>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thu</div>
+                <img
+                  src="http://openweathermap.org/img/wn/02d@2x.png"
+                  alt=""
+                  width="36px"
+                />
+                <div class="weather-forecast-temperature">
+                  <span class="weather-forecast-temperature-max">18° </span>
+                  <span class="weather-forecast-temperature-min">12°</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <small
-          ><a
+
+        <small>
+          <a
             href="https://github.com/theaton89/weather-app-from-scratch"
             target="_blank"
-            >Open source code</a
           >
-          by Taylor Heaton</small
-        >
+            Open source code
+          </a>
+          by Taylor Heaton
+        </small>
       </div>
     </div>
     <script src="src/app.js"></script>
