@@ -99,8 +99,3 @@ small {
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
-
-hr {
-  display: block;
-  max-width: 20%;
-}
