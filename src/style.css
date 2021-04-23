@@ -2,8 +2,9 @@ body {
   font-family: "Libre Franklin", sans-serif;
   background: radial-gradient(
     circle at 10% 20%,
-    rgb(242, 235, 243) 0%,
-    rgb(234, 241, 249) 90.1%
+    rgba(91, 173, 254, 0.46) 0%,
+    rgba(91, 224, 254, 0.46) 47.2%,
+    rgba(170, 254, 235, 0.43) 90%
   );
   background-attachment: fixed;
 }
@@ -24,7 +25,7 @@ li {
   list-style: none;
   font-size: 16px;
   font-weight: 100;
-  line-height: 19px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
 }
@@ -97,4 +98,9 @@ small {
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
+}
+
+hr {
+  display: block;
+  max-width: 20%;
 }

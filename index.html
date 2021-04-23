@@ -32,6 +32,7 @@
                   placeholder="Type a city..."
                   class="form-control"
                   id="city-input"
+                  autofocus
                 />
               </div>
               <div class="col-3">
@@ -65,14 +66,15 @@
                 >
               </div>
             </div>
-
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span>mph</li>
               </ul>
             </div>
+            <hr class="col-10 offset-md-1" />
           </div>
+
           <div class="weather-forecast" id="forecast"></div>
         </div>
 
@@ -80,9 +82,8 @@
           <a
             href="https://github.com/theaton89/weather-app-from-scratch"
             target="_blank"
+            >Open source code</a
           >
-            Open source code
-          </a>
           by Taylor Heaton
         </small>
       </div>
